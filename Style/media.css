@@ -36,6 +36,8 @@
 
     .intro__box {
         align-items: center;
+        left: 0;
+        right: 0;
     }
 
     .intro__text {
@@ -173,17 +175,21 @@
         overflow: hidden;
         overflow-y: scroll;
     }
-    .intro__btn{
+
+    .intro__btn {
         padding: 3px 10px;
         font-size: 12px;
     }
+
     .intro__box {
         gap: 10px;
     }
-    .nav__list{
+
+    .nav__list {
         padding: 30px;
     }
-    .nav__link span{
+
+    .nav__link span {
         padding: 20px 30px;
     }
 
