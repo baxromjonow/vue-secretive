@@ -240,6 +240,7 @@ body {
     /* display: inline-block; */
     /* width: max-content; */
     margin-bottom: 50px;
+    display: block;
     width: max-content;
 
     &::after {

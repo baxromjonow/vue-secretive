@@ -1,10 +1,165 @@
-@media (max-width:1000px) {
+@media (max-width:1140px) {
+    .series__box {
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .series__card {
+        &:nth-child(1) {
+            grid-column: span 2;
+            background-position: right;
+        }
+    }
+
+    .game__title {
+        text-align: center;
+        font-size: 24px;
+        transform: translateY(-8px);
+    }
+
+    .game__plays {
+        background-color: unset;
+        order: -1;
+    }
+
+    .game__play {
+        background-image: url(../Images/play.svg);
+        display: block;
+        width: 41px;
+        height: 47px;
+    }
+
+    .nima {
+        display: none;
+    }
+
+    .game__text {
+        display: none;
+    }
+
+    .collection__box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .collection__card:hover {
+        box-shadow: none;
+    }
+
+    .collection__left,
+    .collection__right,
+    .collection__play,
+    .collection__title {
+        transform: none;
+    }
+
     .intro {
         height: 500px;
     }
+
+    .title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .film__box {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+
+    .film__plays,
+    .film__time,
+    .film__text,
+    .film__title {
+        transform: translate(0) scale(1);
+    }
+
+    .film__card {
+        flex-shrink: 0;
+    }
+
+    .film__card:hover {
+        box-shadow: none;
+    }
+
 }
 
 @media (max-width:800px) {
+    .footer__box{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .series__box {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .series__card {
+        &:nth-child(2) {
+            grid-row: span 2;
+        }
+    }
+
+    .collection__box {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .collection__card {
+        background: #15141482;
+        max-width: 500px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .collection__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .collection__right,
+    .collection__left {
+        display: none;
+    }
+
+    .collection {
+        padding: 25px 0;
+    }
+
+    .widow {
+        background: #ffffffa1;
+        height: 350px;
+    }
+
+    .widow__video {
+        object-fit: cover;
+        object-position: center;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .widow__box {
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .widow__title img {
+        width: 350px;
+        height: 77px;
+    }
+
+    .widow__text {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
     .header__top {
         padding: 10px 0;
     }
@@ -50,6 +205,67 @@
 }
 
 @media (max-width:600px) {
+    .game__play {
+        width: 30px;
+        height: 35px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .collection__card {
+        height: 250px;
+    }
+
+    .collection {
+        padding-top: 15px;
+    }
+
+    .title {
+        font-size: 25px;
+        margin: 5px auto;
+    }
+
+    .film {
+        padding-top: 20px;
+    }
+
+    .film__box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .film__card {
+        width: 100%;
+        height: 250px;
+        gap: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .film__text {
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .film__title {
+        font-size: 18px;
+    }
+
+    .film__time {
+        font-size: 13px;
+        padding: 2px 10px;
+    }
+
+    .play {
+        width: 30px;
+        height: 35px;
+    }
+
     .close {
         position: absolute;
         top: 25px;
@@ -139,6 +355,55 @@
 }
 
 @media (max-width:400px) {
+    .footer__title{
+        font-size: 16px;
+    }
+    .series{
+        padding-bottom: 25px;
+    }
+    .series__box{
+        grid-template-rows: repeat(4,1fr);
+    }
+    .series__card {
+        gap: 10px;
+
+        &:nth-child(1) {
+            grid-row: span 1;
+            background-position: center;
+        }
+
+        &:nth-child(2) {
+            grid-row: span 1;
+        }
+    }
+
+    .series__title {
+        font-size: 18px;
+    }
+
+    .collection__box {
+        gap: 15px;
+    }
+
+    .collection__card {
+        height: 200px;
+    }
+
+    .widow__title img {
+        width: 250px;
+        height: 50px;
+    }
+
+    .widow {
+        padding: 0;
+        padding-top: 10px;
+        height: 330px;
+    }
+
+    .widow__box {
+        justify-content: flex-start;
+    }
+
     .header__top__img {
         width: 30px;
         height: 20px;
